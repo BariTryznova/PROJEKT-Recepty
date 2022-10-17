@@ -33,3 +33,99 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+/* společné */
+
+.kontejner {
+	color: white;
+}
+
+
+.recept {
+	margin-bottom: 2px;
+	background-position: center center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.recept h2 {
+	align-self: flex-end;
+}
+
+.recept h6,
+p {
+	flex: 1 0;
+}
+
+.recept p, 
+h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	font-weight: 400;
+	padding: 10px 10px;
+	flex: 1 0 50%;
+}
+
+.recept P {
+	text-align: right;
+}
+
+.recept h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	padding: 10px 10px;
+	margin: 0;
+}
+
+.hlavni h2 {
+	font-size: 28px;
+}
+
+
+
+/* hlavní recept  */
+
+.hlavni {
+	background-image: url(images/salat.jpg);
+	min-height: 200px;
+}
+
+.jedna,
+.dva,
+.tri,
+.ctyri {
+	min-height: 90px;
+}
+
+/* recept první */
+
+.jedna {
+	background-image: url(images/chlebicek.jpg);
+	min-height: 90px;
+	background-size: cover;
+}
+
+/* recept druhý */
+
+.dva {
+	background-image: url(images/tacos.jpg);
+}
+
+/* recept třetí */
+
+.tri {
+	background-image: url(images/cizrna.jpg);
+}
+
+/* recept čtvrtý */
+
+.ctyri {
+	background-image: url(images/burger.jpg);
+}
+
+
