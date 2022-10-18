@@ -40,6 +40,36 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	color: white;
 }
 
+@media screen and (min-width: 640px) {
+	.kontejner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.hlavni {
+		flex: 1 0 100%
+	}
+
+	.jedna,
+	.dva {
+		flex: 1 0 48%;
+	}
+
+	.tri,
+	.ctyri {
+		flex: 1 0 48%;
+	}
+
+	.jedna,
+	.tri {
+		margin-right: 2px;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	
+}
+
 
 .recept {
 	margin-bottom: 2px;
@@ -55,11 +85,6 @@ Flexboxy mohou být vnořené do sebe, klidně několikrát.
 	align-self: flex-end;
 }
 
-.recept h6,
-p {
-	flex: 1 0;
-}
-
 .recept p, 
 h6 {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -70,7 +95,7 @@ h6 {
 	flex: 1 0 50%;
 }
 
-.recept P {
+.recept p {
 	text-align: right;
 }
 
@@ -82,11 +107,33 @@ h6 {
 	margin: 0;
 }
 
+@media screen and (min-width: 640px) {
+	.recept h2 {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.recept h2 {
+		font-size: 28px;
+	}
+}
+
 .hlavni h2 {
 	font-size: 28px;
 }
 
+@media screen and (min-width: 640px) {
+	.hlavni h2 {
+		font-size: 36px;
+	}
+}
 
+@media screen and (min-width: 850px) {
+	.hlavni h2 {
+		font-size: 48px;
+	}
+}
 
 /* hlavní recept  */
 
@@ -95,6 +142,19 @@ h6 {
 	min-height: 200px;
 }
 
+@media screen and (min-width: 640px) {
+	.hlavni {
+		min-height: 250px;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.hlavni {
+		min-height: 400px;
+	}
+}
+
+
 .jedna,
 .dva,
 .tri,
@@ -102,12 +162,28 @@ h6 {
 	min-height: 90px;
 }
 
+@media screen and (min-width: 640px) {
+	.jedna,
+	.dva,
+	.tri,
+	.ctyri {
+		min-height: 150px;
+	}
+}
+
+@media screen and (min-width: 850px) {
+	.jedna,
+	.dva,
+	.tri,
+	.ctyri {
+		min-height: 200px;
+	}
+}
+
 /* recept první */
 
 .jedna {
 	background-image: url(images/chlebicek.jpg);
-	min-height: 90px;
-	background-size: cover;
 }
 
 /* recept druhý */
